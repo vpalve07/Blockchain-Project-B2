@@ -2,10 +2,12 @@ const mongoose = require('mongoose')
 
 const coinSchema = new mongoose.Schema({
     symbol:{
-        type:String
+        type:String,
+        unique:true
     },
     name: {
-        type:String
+        type:String,
+        unique:true
     },
     marketCapUsd: {
         type:String
